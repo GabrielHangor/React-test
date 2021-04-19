@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Overview from './Components/Overview';
 
 class App extends Component {
   constructor() {
@@ -32,6 +33,8 @@ class App extends Component {
           />
           <button onClick={this.handleClick}>Click Me</button>
         </form>
+        <br />
+        <Overview tasks={this.state.tasks} />
       </div>
     );
   }
